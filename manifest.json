@@ -16,5 +16,9 @@
     },
     "default_title": "Hover to see me",
     "default_popup": "popup.html"
-  }
+  },
+  "background": {
+    "service_worker": "background.js"
+  },
+  "permissions": ["contextMenus"]
 }
