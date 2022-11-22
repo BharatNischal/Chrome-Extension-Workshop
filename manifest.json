@@ -20,5 +20,10 @@
   "background": {
     "service_worker": "background.js"
   },
+  "content_scripts": [{
+    "matches": ["https://en.wikipedia.org/*"],
+    "css": ["content.css"],
+    "js": ["content.js"]
+  }],
   "permissions": ["contextMenus"]
 }
