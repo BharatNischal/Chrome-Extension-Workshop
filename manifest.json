@@ -1,29 +1,19 @@
 {
   "manifest_version": 3,
-  "name": "Workshop",
+  "name": "Bookmark Extension",
   "version": "1.0",
-  "description": "Sample Chrome Extension",
+  "description": "Sample Chrome Extension for saving content in db",
   "icons": {
     "16": "assets/16.png",
     "32": "assets/32.png",
     "64": "assets/64.png",
     "128": "assets/128.png"
   },
-  "action": {
-    "default_icon": {              
-      "16": "assets/16.png",
-      "32": "assets/32.png"
-    },
-    "default_title": "Hover to see me",
-    "default_popup": "popup.html"
-  },
   "background": {
     "service_worker": "background.js"
   },
-  "content_scripts": [{
-    "matches": ["https://en.wikipedia.org/*"],
-    "css": ["content.css"],
-    "js": ["content.js"]
-  }],
-  "permissions": ["contextMenus", "tabs", "storage"]
+  "action": {
+    "default_popup": "popup.html"
+  },
+  "permissions": ["contextMenus","activeTab"]
 }
